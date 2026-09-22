@@ -271,9 +271,14 @@ namespace MidtermExam.Tests
         ///   + virtual void TakeDamage(int damage)
         ///   - void Move(Vector3 direction)
         /// </summary>
+        
         public string id;
         private Vector3 position;
         protected int health;
+        public virtual void Update()
+        {
+            health = 0;
+        }
         [Test(Description = "TC03: ตรวจสอบ GameEntity (Fields: id, position, health / Methods: Update, TakeDamage, Move)")]
         
         public void TC03_GameEntity_Structure()
