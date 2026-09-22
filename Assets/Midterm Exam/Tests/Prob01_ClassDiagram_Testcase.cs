@@ -271,11 +271,15 @@ namespace MidtermExam.Tests
         ///   + virtual void TakeDamage(int damage)
         ///   - void Move(Vector3 direction)
         /// </summary>
+        public string id;
+        private Vector3 position;
+        protected int health;
         [Test(Description = "TC03: ตรวจสอบ GameEntity (Fields: id, position, health / Methods: Update, TakeDamage, Move)")]
+        
         public void TC03_GameEntity_Structure()
         {
             var type = GetClassType("GameEntity");
-
+            GameEntity gameEntity = new GameEntity();
             // ตรวจสอบ Fields
             AssertField(type, "id", typeof(string), "public");
             AssertField(type, "position", typeof(Vector3), "private");

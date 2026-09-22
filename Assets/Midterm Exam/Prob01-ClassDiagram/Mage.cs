@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace MidtermExam.Prob01
 {
-    public class Mage
+    public class Mage : Hero
     {
         // TODO: Implement inheritance, fields and methods according to Class Diagram
     }
